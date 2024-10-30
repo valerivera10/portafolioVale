@@ -13,11 +13,11 @@
     src: url(../src/fonts/Arima-ExtraLight.ttf);
 }
 
-body {
+.body-inicio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: rgb(36, 36, 36);
+    background: linear-gradient(to right, #40505c, #675470);
     color: white;
     padding: 20px;
     font-family: Bold
@@ -27,7 +27,8 @@ header{
     display: flex;
     justify-content: space-between;
     background: rgb(59, 59, 59);
-    box-shadow: 3px 3px 20px rgb(158, 158, 158);
+    box-shadow: 7px 3px 30px rgb(202, 202, 202);
+    border-radius: 1vw;
 }
 
 .options{
@@ -84,7 +85,7 @@ header{
     padding-bottom: 10px;
 }
 
-main{
+.main-inicio{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -146,6 +147,306 @@ main{
 }
 
 .main-text button{
+    width: 25%;
+    height: 4vh;
+    border-radius: 1vw;
+    border: 0px solid;
+    margin-top: 2vh;
+    font-size: 2vh;
+    font-family: Medium;
+}
+
+.main-text a :hover{
+    width: 25%;
+    height: 4vh;
+    border-radius: 1vw;
+    border: 0px solid;
+    margin-top: 2vh;
+    font-size: 2vh;
+    font-family: Medium;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 2px 3px;
+}
+
+
+
+/* ------------------Acerca De Mi--------------------- */ 
+
+
+
+.body-acerca {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, #60acdf, #b466d6);
+    color: white;
+    padding: 20px;
+    font-family: Bold;
+}
+
+
+.main-acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main h1{
+    font-size: 4.3vw;
+}
+
+.parte-inicial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vw;
+}
+
+.biografia{
+    max-width: 40vw;
+    text-align: left;
+    font-family: Extra-Light;
+    justify-content: center;
+}
+
+.biografia h1{
+    font-family: Bold;
+}
+
+.imagen-inicial{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    max-width: 20vw;
+    height: 35vw;
+    max-height: 35vw;
+    text-align: center;
+    border: solid white 4vw;
+    border-radius: 2vw;
+    box-shadow: 1.8vw 1.8vw rgb(161, 161, 161);
+}
+
+.imagen-inicial img{
+    width: 20vw;
+    max-width: 20vw;
+    height: 33vw;
+    max-height: 33vw;
+}
+
+.habilidades{
+    margin-top: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.habilidades h1{
+    font-family: Bold;
+}
+
+.diagram-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  
+  /* Circles */
+  .circle {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  
+  .circle1 { width: 400px; height: 400px; top: 0; left: 0; }
+  .circle2 { width: 300px; height: 300px; top: 50px; left: 50px; }
+  .circle3 { width: 200px; height: 200px; top: 100px; left: 100px; }
+  .circle4 { width: 100px; height: 100px; top: 150px; left: 150px; }
+  
+  /* Center skill */
+  .center-skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* Skill Labels */
+  .skill {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .skill :hover {
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  
+  /* Skill Positions */
+  .skill.Python { top: 50%; left: 0; transform: translate(-50%, -50%); }
+  .skill.Postgresql { top: 70%; left: 25%; transform: translate(-50%, -50%); }
+  .skill.Html { top: 20%; left: 25%; transform: translate(-50%, -50%); }
+  .skill.javascript { top: 85%; left: 50%; transform: translate(-50%, -50%); }
+  .skill.MySQL { top: 15%; left: 50%; transform: translate(-50%, -50%); }
+  .skill.Springboot { top: 30%; left: 75%; transform: translate(-50%, -50%); }
+  .skill.Java { top: 70%; left: 75%; transform: translate(-50%, -50%); }
+  .skill.css { top: 50%; left: 75%; transform: translate(-50%, -50%); }
+
+
+.MV{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10vw;
+    width: 60%;
+}
+
+.MV p{
+    font-family: Extra-Light;
+}
+
+.vision{
+    margin-top: 5vw;
+}
+
+.education{
+    display: flex;
+    max-width: 75vw;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 15vw;
+    align-self: center;
+
+}  
+  
+  .timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 46px;
+    width: 4px;
+    height: 0;
+    background-color: #4b4b4b;
+    transition: height 0.3s ease;
+    border: solid white 1px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  
+  .dot {
+    position: relative;
+    width: 20px;
+    height: 18px;
+    background-color: #000000;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  
+  .content {
+    max-width: 50vw;
+  }
+
+  .content h3{
+    font-size: 2vw;
+  }
+
+  .minitext{
+    font-size: 1.4vw;
+    font-family: Extra-Light;
+  }
+
+  .normaltext{
+    font-size: 1.6vw;
+    font-family: Medium;
+  }
+
+
+/* -------------Proyectos---------------- */
+
+
+.body-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(36, 36, 36);
+    color: white;
+    padding: 20px;
+    font-family: Bold
+}
+
+.main-proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.proyecto{
+    display: flex;
+    justify-content: space-between;
+    border:2px solid#ffffff;
+    border-radius: 3vw;
+    margin: 5vw;
+    padding: 2vw;
+    box-shadow: #ffffff 8px 8px 3px 0px;
+
+}
+
+.img{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyecto img{
+    width: 35vw;
+    max-width: 35vw;
+    border-radius: 1vw;
+}
+
+.info{
+    width: 50%;
+}
+
+.info p {
+    font-size: 1.4vw;
+    font-family: extra-light;
+}
+
+.proyecto h1{
+    margin: 0;
+    font-size: 3vw;
+}
+
+.proyecto button{
     width: 25%;
     height: 4vh;
     border-radius: 1vw;

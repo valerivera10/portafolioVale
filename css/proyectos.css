@@ -1,18 +1,3 @@
-@font-face {
-    font-family: Medium;
-    src: url(../src/fonts/Arima-Medium.ttf);
-}
-
-@font-face {
-    font-family: Bold;
-    src: url(../src/fonts/Arima-Bold.ttf);
-}
-
-@font-face {
-    font-family: Extra-Light;
-    src: url(../src/fonts/Arima-ExtraLight.ttf);
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -23,12 +8,15 @@ body {
     font-family: Bold
 }
 
-
 header{
     display: flex;
     justify-content: space-between;
     background: rgb(59, 59, 59);
     box-shadow: 3px 3px 20px rgb(158, 158, 158);
+}
+
+.proyecto {
+    background-color: grey;
 }
 
 .options{
@@ -85,32 +73,10 @@ header{
     padding-bottom: 10px;
 }
 
-.parte-inicial{
+main{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5vw;
 }
 
-.biografia{
-    max-width: 40vw;
-    text-align: left;
-    font-family: Extra-Light;
-    justify-content: center;
-}
-
-.imagen-inicial{
-    display: flex;
-    align-items: center;
-    width: 25vw;
-    max-width: 25vw;
-    text-align: center;
-    border: solid white 4vw;
-    border-radius: 2vw;
-    box-shadow: 1.8vw 1.8vw rgb(161, 161, 161);
-}
-
-.imagen-inicial img{
-    width: 25vw;
-    max-width: 25vw;
-}
