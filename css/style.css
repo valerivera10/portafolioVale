@@ -123,8 +123,8 @@ header{
 }
 
 .center-img img{
-    width: 28vw;
-    max-width: 28vw;
+    width: 40vw;
+    max-width: 40vw;
 }
 
 .main-text{
@@ -154,6 +154,7 @@ header{
     margin-top: 2vh;
     font-size: 2vh;
     font-family: Medium;
+    cursor: pointer;
 }
 
 .main-text a :hover{
@@ -169,6 +170,90 @@ header{
     box-shadow: 1px 2px 3px;
 }
 
+/* --------------------Animacion de apertura----------------------- */
+
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: 10;
+    transition: opacity 1s ease;
+  }
+  
+  /* Contenido Principal Oculto al Inicio */
+  .content {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  /* Clase para hacer desaparecer el preloader */
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Clase para mostrar el contenido después de la animación */
+  .visible {
+    opacity: 1;
+  }
+
+
+
+/* --------------------Animacion de cambio de pantalla----------------------------- */
+
+
+  /* Estilos de las barras */
+  .bar {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background-color: #333;
+    z-index: 10;
+    transition: transform 0.4s ease; /* Transición suave */
+  }
+  
+  .bar-left {
+    left: 0;
+    transform: translateX(-100%); /* Empieza fuera de pantalla */
+  }
+  
+  .bar-right {
+    right: 0;
+    transform: translateX(100%); /* Empieza fuera de pantalla */
+  }
+
+
+/* --------------------Inversion de color----------------------- */
+
+
+body.inverted {
+    filter: invert(1); /* Aplica el filtro de inversión de colores */
+  }
+  
+  /* Estilo del botón */
+  #invert-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
 
 
 /* ------------------Acerca De Mi--------------------- */ 
@@ -198,6 +283,8 @@ main h1{
 
 .parte-inicial{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 5vw;
@@ -217,21 +304,20 @@ main h1{
 .imagen-inicial{
     display: flex;
     align-items: center;
-    width: 20vw;
-    max-width: 20vw;
-    height: 35vw;
-    max-height: 35vw;
+    justify-content: center;
+    width: 45vw;
+    max-width: 45vw;
+    height: 45vw;
+    max-height: 45vw;
     text-align: center;
-    border: solid white 4vw;
-    border-radius: 2vw;
-    box-shadow: 1.8vw 1.8vw rgb(161, 161, 161);
+
 }
 
 .imagen-inicial img{
-    width: 20vw;
-    max-width: 20vw;
-    height: 33vw;
-    max-height: 33vw;
+    width: 45vw;
+    max-width: 45vw;
+    height: 45vw;
+    max-height: 45vw;
 }
 
 .habilidades{
@@ -288,15 +374,6 @@ main h1{
     white-space: nowrap;
   }
 
-  .skill :hover {
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 5px 10px;
-    border-radius: 10px;
-    white-space: nowrap;
-  }
-  
   /* Skill Positions */
   .skill.Python { top: 50%; left: 0; transform: translate(-50%, -50%); }
   .skill.Postgresql { top: 70%; left: 25%; transform: translate(-50%, -50%); }
@@ -370,11 +447,11 @@ main h1{
     z-index: 1;
   }
   
-  .content {
+  .content-edu {
     max-width: 50vw;
   }
 
-  .content h3{
+  .content-edu h3{
     font-size: 2vw;
   }
 
@@ -454,4 +531,19 @@ main h1{
     margin-top: 2vh;
     font-size: 2vh;
     font-family: Medium;
+    cursor: pointer;
+}
+
+.proyecto a :hover{
+    width: 25%;
+    height: 4vh;
+    border-radius: 1vw;
+    border: 0px solid;
+    margin-top: 2vh;
+    font-size: 2vh;
+    font-family: Medium;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 2px 3px;
 }

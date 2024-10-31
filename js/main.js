@@ -16,8 +16,11 @@ export const reload = async()=>{
 }
 
 const handleAcercaDe = async () => {
-    await clearInformation()
-    await acercaDe();
+    setTimeout(() =>{
+        clearInformation()
+        acercaDe();
+    }, 1000)
+    
 }
 
 const handleInicio = async () => {
@@ -25,8 +28,11 @@ const handleInicio = async () => {
 }
 
 const handleProyectos = async () => {
-    await clearInformation()
-    await proyectos();
+    setTimeout(() =>{
+        clearInformation()
+        proyectos();
+    }, 1000)
+    
 }
 
 document.addEventListener("DOMContentLoaded", async (e) => {

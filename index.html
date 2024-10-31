@@ -8,15 +8,23 @@
     <script type="module" src="js/main.js" defer></script>
 </head>
 <body id="body" class="body-inicio">
+    <div class="preloader" id="preloader">
+        <img src="./src/imgs/logo.png">
+    </div>
+
+    <!-- Barras de transición -->
+    <div class="bar bar-left" id="bar-left"></div>
+    <div class="bar bar-right" id="bar-right"></div>
+
     <header>
         <section class="options">
             <div class="inicio">
                 <p>Inicio</p>
             </div>
-            <div class="acerca">
+            <div class="acerca" id="acerca">
                 <p>Acerca de mi</p>
             </div>
-            <div class="proyectos">
+            <div class="proyectos" id="proyectos">
                 <p>Proyectos</p>
             </div>
         </section>
@@ -41,7 +49,7 @@
     <main id="main" class="main-inicio">
         <section class="center-img">
             <div>
-                <img src="./src/imgs/index2.png">
+                <img src="./src/imgs/main-img3.png">
             </div>
         </section>
         <section class="main-text">

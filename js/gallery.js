@@ -21,7 +21,7 @@ export const acercaDe = async () => {
                 </div>
                 <div class="imagen-inicial">
                     <div>
-                        <img src="./src/imgs/main-img2.png">
+                        <img src="./src/imgs/acerca-de-mi.png">
                     </div>
                 </div>
             </section>
@@ -68,7 +68,7 @@ export const acercaDe = async () => {
                     <!-- Timeline Item 1 -->
                         <div class="timeline-item">
                             <div class="dot"></div>
-                            <div class="content">
+                            <div class="content-edu">
                                 <h3>Campuslands</h3>
                                 <p class="minitext">2024 | Zona Franca, Bucaramanga</p>
                                 <p class="normaltext">Certificación en centro de estudio con duracion de 10 meses sobre desarrollo web con enfoques en Fullstack.</p>
@@ -78,7 +78,7 @@ export const acercaDe = async () => {
                     <!-- Timeline Item 2 -->
                         <div class="timeline-item">
                             <div class="dot"></div>
-                            <div class="content">
+                            <div class="content-edu">
                                 <h3>Colegio Andalucia</h3>
                                 <p class="minitext">2023 | Floridablanca, Santander</p>
                                 <p class="normaltext">Titulo de bachiller con un desempeño destacable y ocupando puestos honorificos en el año escolar.</p>
